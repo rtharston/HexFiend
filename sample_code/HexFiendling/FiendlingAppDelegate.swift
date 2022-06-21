@@ -10,6 +10,7 @@ class FiendlingExample: NSObject {
     }
 }
 
+@NSApplicationMain
 class FiendlingAppDelegate2: NSObject, NSApplicationDelegate {
 
     @objc dynamic var examples: [FiendlingExample] = []

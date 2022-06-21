@@ -198,7 +198,6 @@
 		A5FCE695253530DF00043F1D /* HFUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FCE694253530DB00043F1D /* HFUIUtils.m */; };
 		A5FCE69C253530E000043F1D /* HFUIUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A5FCE694253530DB00043F1D /* HFUIUtils.m */; };
 		D00122E30D48A8D400540B10 /* HFFindReplaceBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = D00122E20D48A8D400540B10 /* HFFindReplaceBackgroundView.m */; };
-		D00C16790FF4925A006D021F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D00C16750FF4925A006D021F /* main.m */; };
 		D00EBA730CE866D50020E2D7 /* HFVerticalScrollerRepresenter.h in Headers */ = {isa = PBXBuildFile; fileRef = D00EBA710CE866D50020E2D7 /* HFVerticalScrollerRepresenter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D00EBA740CE866D50020E2D7 /* HFVerticalScrollerRepresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = D00EBA720CE866D50020E2D7 /* HFVerticalScrollerRepresenter.m */; };
 		D010173610491BB200536FBC /* HFTextVisualStyleRun.h in Headers */ = {isa = PBXBuildFile; fileRef = D010173410491BB200536FBC /* HFTextVisualStyleRun.h */; settings = {ATTRIBUTES = (); }; };
@@ -533,7 +532,6 @@
 		D00122E20D48A8D400540B10 /* HFFindReplaceBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFFindReplaceBackgroundView.m; path = app/sources/HFFindReplaceBackgroundView.m; sourceTree = "<group>"; };
 		D00C15E50FF091FF006D021F /* HexFiendling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HexFiendling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00C16740FF4925A006D021F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D00C16750FF4925A006D021F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D00EBA710CE866D50020E2D7 /* HFVerticalScrollerRepresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFVerticalScrollerRepresenter.h; path = sources/HFVerticalScrollerRepresenter.h; sourceTree = "<group>"; };
 		D00EBA720CE866D50020E2D7 /* HFVerticalScrollerRepresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFVerticalScrollerRepresenter.m; path = sources/HFVerticalScrollerRepresenter.m; sourceTree = "<group>"; };
 		D010173410491BB200536FBC /* HFTextVisualStyleRun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFTextVisualStyleRun.h; path = sources/HFTextVisualStyleRun.h; sourceTree = "<group>"; };
@@ -994,7 +992,6 @@
 		D00C166E0FF4925A006D021F /* HexFiendling */ = {
 			isa = PBXGroup;
 			children = (
-				D00C16750FF4925A006D021F /* main.m */,
 				D0D110520FF602D800AE5CFB /* FiendlingAppDelegate.h */,
 				D0D110530FF602D800AE5CFB /* FiendlingAppDelegate.m */,
 				A5791D64286183680067FC1E /* FiendlingAppDelegate.swift */,
@@ -1919,7 +1916,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D00C16790FF4925A006D021F /* main.m in Sources */,
 				D0D110540FF602D800AE5CFB /* FiendlingAppDelegate.m in Sources */,
 				A5791D65286183680067FC1E /* FiendlingAppDelegate.swift in Sources */,
 			);
