@@ -80,6 +80,7 @@
 		A572614F21D9AA7600970A0E /* HFEncodingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A572614C21D9AA7600970A0E /* HFEncodingManager.m */; };
 		A572615021D9AA7600970A0E /* HFEncodingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A572614C21D9AA7600970A0E /* HFEncodingManager.m */; };
 		A5791D62286181DD0067FC1E /* sampleData.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A5791D61286181DD0067FC1E /* sampleData.rtf */; };
+		A5791D65286183680067FC1E /* FiendlingAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5791D64286183680067FC1E /* FiendlingAppDelegate.swift */; };
 		A57F34731F1B236E00234B94 /* HFHexPasteboardOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = A57F34711F1B236E00234B94 /* HFHexPasteboardOwner.m */; };
 		A57F34741F1B236E00234B94 /* HFHexPasteboardOwner.h in Headers */ = {isa = PBXBuildFile; fileRef = A57F34721F1B236E00234B94 /* HFHexPasteboardOwner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A57F34761F1B2A2B00234B94 /* HFHexPasteboardOwnerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A57F34751F1B2A2B00234B94 /* HFHexPasteboardOwnerTest.m */; };
@@ -476,6 +477,8 @@
 		A572614B21D9AA7600970A0E /* HFEncodingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HFEncodingManager.h; path = sources/HFEncodingManager.h; sourceTree = "<group>"; };
 		A572614C21D9AA7600970A0E /* HFEncodingManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HFEncodingManager.m; path = sources/HFEncodingManager.m; sourceTree = "<group>"; };
 		A5791D61286181DD0067FC1E /* sampleData.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = sampleData.rtf; sourceTree = "<group>"; };
+		A5791D63286183670067FC1E /* HexFiendling-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexFiendling-Bridging-Header.h"; sourceTree = "<group>"; };
+		A5791D64286183680067FC1E /* FiendlingAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiendlingAppDelegate.swift; sourceTree = "<group>"; };
 		A57F34711F1B236E00234B94 /* HFHexPasteboardOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFHexPasteboardOwner.m; path = sources/HFHexPasteboardOwner.m; sourceTree = "<group>"; };
 		A57F34721F1B236E00234B94 /* HFHexPasteboardOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFHexPasteboardOwner.h; path = sources/HFHexPasteboardOwner.h; sourceTree = "<group>"; };
 		A57F34751F1B2A2B00234B94 /* HFHexPasteboardOwnerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HFHexPasteboardOwnerTest.m; sourceTree = "<group>"; };
@@ -994,9 +997,11 @@
 				D00C16750FF4925A006D021F /* main.m */,
 				D0D110520FF602D800AE5CFB /* FiendlingAppDelegate.h */,
 				D0D110530FF602D800AE5CFB /* FiendlingAppDelegate.m */,
+				A5791D64286183680067FC1E /* FiendlingAppDelegate.swift */,
 				D071391E146F7897004D3792 /* MainMenu.xib */,
 				D00C16740FF4925A006D021F /* Info.plist */,
 				A5791D61286181DD0067FC1E /* sampleData.rtf */,
+				A5791D63286183670067FC1E /* HexFiendling-Bridging-Header.h */,
 			);
 			name = HexFiendling;
 			path = sample_code/HexFiendling;
@@ -1649,6 +1654,9 @@
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Manual;
 					};
+					D00C15E40FF091FF006D021F = {
+						LastSwiftMigration = 1400;
+					};
 				};
 			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "HexFiend_2" */;
@@ -1913,6 +1921,7 @@
 			files = (
 				D00C16790FF4925A006D021F /* main.m in Sources */,
 				D0D110540FF602D800AE5CFB /* FiendlingAppDelegate.m in Sources */,
+				A5791D65286183680067FC1E /* FiendlingAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2684,11 +2693,19 @@
 		D00C15ED0FF09200006D021F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = sample_code/HexFiendling/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = HexFiendling;
+				SWIFT_OBJC_BRIDGING_HEADER = "sample_code/HexFiendling/HexFiendling-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -2834,11 +2851,18 @@
 		D022256E146F5D3900646C27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = sample_code/HexFiendling/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = HexFiendling;
+				SWIFT_OBJC_BRIDGING_HEADER = "sample_code/HexFiendling/HexFiendling-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -2992,11 +3016,19 @@
 		D02225A3146F629E00646C27 /* Debug+UnitTests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = sample_code/HexFiendling/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = HexFiendling;
+				SWIFT_OBJC_BRIDGING_HEADER = "sample_code/HexFiendling/HexFiendling-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = "Debug+UnitTests";
 		};
@@ -3149,12 +3181,19 @@
 		D039DC1614835A1400364FA6 /* Release+CodeSign */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = sample_code/HexFiendling/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = HexFiendling;
+				SWIFT_OBJC_BRIDGING_HEADER = "sample_code/HexFiendling/HexFiendling-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = "Release+CodeSign";
 		};
@@ -3322,13 +3361,20 @@
 		D053902C1E218CB700F9AAC1 /* Release+MAS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "-";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = sample_code/HexFiendling/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = HexFiendling;
+				SWIFT_OBJC_BRIDGING_HEADER = "sample_code/HexFiendling/HexFiendling-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = "Release+MAS";
 		};
@@ -3508,12 +3554,20 @@
 		D05390331E218CD500F9AAC1 /* Debug+MAS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = sample_code/HexFiendling/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = HexFiendling;
+				SWIFT_OBJC_BRIDGING_HEADER = "sample_code/HexFiendling/HexFiendling-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = "Debug+MAS";
 		};
@@ -3703,11 +3757,19 @@
 		D075E20A148196B00010D9AE /* Debug+CodeSign */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = sample_code/HexFiendling/Info.plist;
 				INSTALL_PATH = "$(HOME)/Applications";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ridiculousfish.${PRODUCT_NAME:identifier}";
 				PRODUCT_NAME = HexFiendling;
+				SWIFT_OBJC_BRIDGING_HEADER = "sample_code/HexFiendling/HexFiendling-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = "Debug+CodeSign";
 		};
