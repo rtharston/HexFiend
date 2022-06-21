@@ -13,7 +13,12 @@ class FiendlingExample: NSObject {
 @NSApplicationMain
 class FiendlingAppDelegate2: NSObject, NSApplicationDelegate {
 
-    @objc dynamic var examples: [FiendlingExample] = []
+    @objc let examples = [
+        FiendlingExample(label: "Bound HFTextView", explanation: "This example demonstrates showing and editing data via the \"data\" binding on both NSTextView and HFTextView."),
+        FiendlingExample(label: "In-Memory Data", explanation: "This example demonstrates showing in-memory data in a hex view."),
+        FiendlingExample(label: "File Data, Multiple Views", explanation: "This example demonstrates showing file data in three coherent views (a hex view, an ASCII view, and a scroll bar)."),
+        FiendlingExample(label: "External Data", explanation: "This example demonstrates showing data from an external source."),
+    ]
 
     /* The tab view in our nib */
     @IBOutlet var tabView: NSTabView?
@@ -125,12 +130,6 @@ class FiendlingAppDelegate2: NSObject, NSApplicationDelegate {
     }
 
     func applicationDidFinishLaunching(_ notification: Notification) {
-        self.examples = [
-            FiendlingExample(label: "Bound HFTextView", explanation: "This example demonstrates showing and editing data via the \"data\" binding on both NSTextView and HFTextView."),
-            FiendlingExample(label: "In-Memory Data", explanation: "This example demonstrates showing in-memory data in a hex view."),
-            FiendlingExample(label: "File Data, Multiple Views", explanation: "This example demonstrates showing file data in three coherent views (a hex view, an ASCII view, and a scroll bar)."),
-            FiendlingExample(label: "External Data", explanation: "This example demonstrates showing data from an external source."),
-        ]
         do {
             try setUpBoundDataHexView()
             setUpInMemoryHexViewIntoView(containerView: viewForIdentifier("in_memory_hex_view"))
