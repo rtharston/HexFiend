@@ -1,8 +1,8 @@
 import Cocoa
 
 class FiendlingExample: NSObject {
-    @objc dynamic let label: String
-    @objc dynamic let explanation: String
+    @objc let label: String
+    @objc let explanation: String
 
     init(label: String, explanation: String) {
         self.label = label
