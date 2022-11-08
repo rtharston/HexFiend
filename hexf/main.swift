@@ -53,12 +53,21 @@ Usage:
             throw HexfError.launchAppNoUrl
         }
         
-        let config = [NSWorkspace.LaunchConfigurationKey.arguments: args]
-        
         do {
-            // TODO: Heed deprecation warning, and get right config type. This will require an availability check.
-            //            try NSWorkspace.shared.openApplication(at: url, configuration: config)
-            try NSWorkspace.shared.launchApplication(at: url, options: NSWorkspace.LaunchOptions.default, configuration: config)
+            if #available(macOS 10.15, *) {
+                let config = NSWorkspace.OpenConfiguration()
+                config.activates = true
+                config.arguments = args
+                let w = NSWorkspace.shared
+                print("got here")
+                w.openApplication(at: url, configuration: config, completionHandler: { _, error in
+                    print("open error: \(error)")
+//                    throw error
+                })
+            } else {
+                let config = [NSWorkspace.LaunchConfigurationKey.arguments: args]
+                try NSWorkspace.shared.launchApplication(at: url, options: NSWorkspace.LaunchOptions.default, configuration: config)
+            }
         } catch {
             fputs("Launch app failed: \(error.localizedDescription)", stderr)
             throw HexfError.launchAppFailure
