@@ -9,7 +9,7 @@
 #import "BaseDataDocument.h"
 #import "DiffDocument.h"
 #import "MyDocumentController.h"
-#import "DiffRangeWindowController.h"
+#import "Hex_Fiend-Swift.h"
 #include <assert.h>
 #include <errno.h>
 #include <stdbool.h>

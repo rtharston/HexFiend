@@ -26,6 +26,7 @@
 		00DAE16B291A18090094C709 /* CLIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE16A291A18090094C709 /* CLIController.swift */; };
 		00DAE16E291B794D0094C709 /* ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE16D291B794D0094C709 /* ObjC.m */; };
 		00DAE17029203CB50094C709 /* ChooseStringEncodingWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE16F29203CB50094C709 /* ChooseStringEncodingWindowController.swift */; };
+		00DAE17B2920CF020094C709 /* DiffRangeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE1792920CABC0094C709 /* DiffRangeWindowController.swift */; };
 		795F46C114BAA45D00EB2F7D /* OpenDriveWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F46C014BAA45D00EB2F7D /* OpenDriveWindowController.m */; };
 		795F46C314BAADB600EB2F7D /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F46C214BAADB600EB2F7D /* DiskArbitration.framework */; };
 		79E2FF201745A2B300FA8F12 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 79E2FF1F1745A2B300FA8F12 /* dsa_pub.pem */; };
@@ -340,7 +341,6 @@
 		D0D828E60CDE89E800C2AB82 /* HFFullMemoryByteSlice.h in Headers */ = {isa = PBXBuildFile; fileRef = D08F5E370CDE84F4007EFFE8 /* HFFullMemoryByteSlice.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D0D829110CDE969F00C2AB82 /* HFByteArray.h in Headers */ = {isa = PBXBuildFile; fileRef = D08F5DEF0CDE8223007EFFE8 /* HFByteArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C1F92C16F278BA00A4C36E /* DiffRangeDialog.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C1F92A16F278BA00A4C36E /* DiffRangeDialog.xib */; };
-		D8EE3EFE16F26689001C7C09 /* DiffRangeWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8EE3EFD16F26689001C7C09 /* DiffRangeWindowController.m */; };
 		DAE8EBFE1598FFDB0008ADB9 /* DocumentWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE8EBFD1598FFDB0008ADB9 /* DocumentWindow.m */; };
 		FB1E99AA14A301CD002136A3 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05984CB1032C6D900059E72 /* Security.framework */; };
 /* End PBXBuildFile section */
@@ -424,6 +424,7 @@
 		00DAE16C291B794D0094C709 /* ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjC.h; path = app/sources/ObjC.h; sourceTree = "<group>"; };
 		00DAE16D291B794D0094C709 /* ObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ObjC.m; path = app/sources/ObjC.m; sourceTree = "<group>"; };
 		00DAE16F29203CB50094C709 /* ChooseStringEncodingWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChooseStringEncodingWindowController.swift; path = app/sources/ChooseStringEncodingWindowController.swift; sourceTree = "<group>"; };
+		00DAE1792920CABC0094C709 /* DiffRangeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiffRangeWindowController.swift; path = app/sources/DiffRangeWindowController.swift; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* Base */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = app/sources/main.m; sourceTree = "<group>"; };
@@ -696,8 +697,6 @@
 		D0D4BE88146F4B3A001B0A71 /* FortunateSon-Launchd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FortunateSon-Launchd.plist"; path = "helper_subprocess/FortunateSon-Launchd.plist"; sourceTree = "<group>"; };
 		D0D828FE0CDE8ABE00C2AB82 /* HFFullMemoryByteArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HFFullMemoryByteArray.h; path = sources/HFFullMemoryByteArray.h; sourceTree = "<group>"; };
 		D0D828FF0CDE8ABE00C2AB82 /* HFFullMemoryByteArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HFFullMemoryByteArray.m; path = sources/HFFullMemoryByteArray.m; sourceTree = "<group>"; };
-		D8EE3EFC16F26689001C7C09 /* DiffRangeWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DiffRangeWindowController.h; path = app/sources/DiffRangeWindowController.h; sourceTree = "<group>"; };
-		D8EE3EFD16F26689001C7C09 /* DiffRangeWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DiffRangeWindowController.m; path = app/sources/DiffRangeWindowController.m; sourceTree = "<group>"; };
 		DAE8EBFC1598FFDB0008ADB9 /* DocumentWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DocumentWindow.h; path = app/sources/DocumentWindow.h; sourceTree = "<group>"; };
 		DAE8EBFD1598FFDB0008ADB9 /* DocumentWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DocumentWindow.m; path = app/sources/DocumentWindow.m; sourceTree = "<group>"; };
 		FBEA8E7F14A2C10B00C27288 /* fileport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fileport.h; path = helper_subprocess/fileport.h; sourceTree = "<group>"; };
@@ -1350,8 +1349,7 @@
 				00DAE16F29203CB50094C709 /* ChooseStringEncodingWindowController.swift */,
 				795F46BF14BAA45D00EB2F7D /* OpenDriveWindowController.h */,
 				795F46C014BAA45D00EB2F7D /* OpenDriveWindowController.m */,
-				D8EE3EFC16F26689001C7C09 /* DiffRangeWindowController.h */,
-				D8EE3EFD16F26689001C7C09 /* DiffRangeWindowController.m */,
+				00DAE1792920CABC0094C709 /* DiffRangeWindowController.swift */,
 				00DAE16A291A18090094C709 /* CLIController.swift */,
 			);
 			name = Dialogs;
@@ -1828,6 +1826,7 @@
 				A5589ACF2206D3C8000293A4 /* HFOpenAccessoryViewController.m in Sources */,
 				A5628AAB21D8561D00911ABB /* Tcl_ParseArgsObjv.c in Sources */,
 				00DAE17029203CB50094C709 /* ChooseStringEncodingWindowController.swift in Sources */,
+				00DAE17B2920CF020094C709 /* DiffRangeWindowController.swift in Sources */,
 				A59BC5922001FB9A0066860F /* HFTclTemplateController.m in Sources */,
 				00DAE16B291A18090094C709 /* CLIController.swift in Sources */,
 				D059E1291311C676001493B8 /* AppDebugging.m in Sources */,
@@ -1838,7 +1837,6 @@
 				A59BC59820020B480066860F /* HFBinaryTemplateController.m in Sources */,
 				795F46C114BAA45D00EB2F7D /* OpenDriveWindowController.m in Sources */,
 				DAE8EBFE1598FFDB0008ADB9 /* DocumentWindow.m in Sources */,
-				D8EE3EFE16F26689001C7C09 /* DiffRangeWindowController.m in Sources */,
 				A572614A21D8A51B00970A0E /* HFPrompt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

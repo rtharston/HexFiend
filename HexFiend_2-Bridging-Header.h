@@ -4,5 +4,6 @@
 
 #import "AppDelegate.h"
 #import "BaseDataDocument.h"
+#import "DiffDocument.h"
 #import <HexFiend/HFEncodingManager.h>
 #import "ObjC.h"
