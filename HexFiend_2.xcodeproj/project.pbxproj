@@ -23,6 +23,8 @@
 
 /* Begin PBXBuildFile section */
 		001BEF982910F23600BB82B3 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001BEF972910F23600BB82B3 /* main.swift */; };
+		00DAE16B291A18090094C709 /* CLIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE16A291A18090094C709 /* CLIController.swift */; };
+		00DAE16E291B794D0094C709 /* ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE16D291B794D0094C709 /* ObjC.m */; };
 		795F46C114BAA45D00EB2F7D /* OpenDriveWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F46C014BAA45D00EB2F7D /* OpenDriveWindowController.m */; };
 		795F46C314BAADB600EB2F7D /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F46C214BAADB600EB2F7D /* DiskArbitration.framework */; };
 		79E2FF201745A2B300FA8F12 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 79E2FF1F1745A2B300FA8F12 /* dsa_pub.pem */; };
@@ -73,7 +75,6 @@
 		A5589ACF2206D3C8000293A4 /* HFOpenAccessoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5589ACE2206D3C8000293A4 /* HFOpenAccessoryViewController.m */; };
 		A5589AD22206E1C4000293A4 /* ExtendedAttributeDataDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = A5589AD12206E1C4000293A4 /* ExtendedAttributeDataDocument.m */; };
 		A5628AAB21D8561D00911ABB /* Tcl_ParseArgsObjv.c in Sources */ = {isa = PBXBuildFile; fileRef = A5628AA921D8561C00911ABB /* Tcl_ParseArgsObjv.c */; settings = {COMPILER_FLAGS = "-w"; }; };
-		A56D78161E7EF088001D1892 /* CLIController.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D78151E7EF088001D1892 /* CLIController.m */; };
 		A572614A21D8A51B00970A0E /* HFPrompt.m in Sources */ = {isa = PBXBuildFile; fileRef = A572614921D8A51B00970A0E /* HFPrompt.m */; };
 		A572614D21D9AA7600970A0E /* HFEncodingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A572614B21D9AA7600970A0E /* HFEncodingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A572614E21D9AA7600970A0E /* HFEncodingManager.h in Headers */ = {isa = PBXBuildFile; fileRef = A572614B21D9AA7600970A0E /* HFEncodingManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -418,6 +419,10 @@
 
 /* Begin PBXFileReference section */
 		001BEF972910F23600BB82B3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		00DAE167291A16CE0094C709 /* HexFiend_2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HexFiend_2-Bridging-Header.h"; sourceTree = "<group>"; };
+		00DAE16A291A18090094C709 /* CLIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLIController.swift; sourceTree = "<group>"; };
+		00DAE16C291B794D0094C709 /* ObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjC.h; path = app/sources/ObjC.h; sourceTree = "<group>"; };
+		00DAE16D291B794D0094C709 /* ObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ObjC.m; path = app/sources/ObjC.m; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* Base */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = app/sources/main.m; sourceTree = "<group>"; };
@@ -469,8 +474,6 @@
 		A5589AD12206E1C4000293A4 /* ExtendedAttributeDataDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ExtendedAttributeDataDocument.m; path = app/sources/ExtendedAttributeDataDocument.m; sourceTree = "<group>"; };
 		A5628AA921D8561C00911ABB /* Tcl_ParseArgsObjv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Tcl_ParseArgsObjv.c; path = app/sources/Tcl_ParseArgsObjv.c; sourceTree = "<group>"; };
 		A5628AAA21D8561C00911ABB /* Tcl_ParseArgsObjv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tcl_ParseArgsObjv.h; path = app/sources/Tcl_ParseArgsObjv.h; sourceTree = "<group>"; };
-		A56D78141E7EF088001D1892 /* CLIController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CLIController.h; path = app/sources/CLIController.h; sourceTree = "<group>"; };
-		A56D78151E7EF088001D1892 /* CLIController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CLIController.m; path = app/sources/CLIController.m; sourceTree = "<group>"; };
 		A572614821D8A51B00970A0E /* HFPrompt.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HFPrompt.h; path = app/sources/HFPrompt.h; sourceTree = "<group>"; };
 		A572614921D8A51B00970A0E /* HFPrompt.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HFPrompt.m; path = app/sources/HFPrompt.m; sourceTree = "<group>"; };
 		A572614B21D9AA7600970A0E /* HFEncodingManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HFEncodingManager.h; path = sources/HFEncodingManager.h; sourceTree = "<group>"; };
@@ -789,6 +792,8 @@
 			isa = PBXGroup;
 			children = (
 				A531921B21D585FD006C25D6 /* version.h */,
+				00DAE16C291B794D0094C709 /* ObjC.h */,
+				00DAE16D291B794D0094C709 /* ObjC.m */,
 				D0560B350CDC4248009D2484 /* Framework */,
 				D0560B380CDC4253009D2484 /* App */,
 				D047E33B1022CF2B00EF307B /* PrivilegedHelper */,
@@ -1224,6 +1229,7 @@
 				29B97316FDCFA39411CA2CEA /* main.m */,
 				D0CD51F40DA2B928006E8D1B /* AppDelegate.h */,
 				D0CD51F50DA2B928006E8D1B /* AppDelegate.m */,
+				00DAE167291A16CE0094C709 /* HexFiend_2-Bridging-Header.h */,
 				D02BD6D910545E7B00535EDE /* DocumentTypes */,
 				D084E75C115DAE90004DC181 /* DiffDocument */,
 				D0D8C45C12A3EF3F00960FC4 /* Dialogs */,
@@ -1348,8 +1354,7 @@
 				795F46C014BAA45D00EB2F7D /* OpenDriveWindowController.m */,
 				D8EE3EFC16F26689001C7C09 /* DiffRangeWindowController.h */,
 				D8EE3EFD16F26689001C7C09 /* DiffRangeWindowController.m */,
-				A56D78141E7EF088001D1892 /* CLIController.h */,
-				A56D78151E7EF088001D1892 /* CLIController.m */,
+				00DAE16A291A18090094C709 /* CLIController.swift */,
 			);
 			name = Dialogs;
 			sourceTree = "<group>";
@@ -1642,6 +1647,9 @@
 				LastUpgradeCheck = 1340;
 				ORGANIZATIONNAME = ridiculous_fish;
 				TargetAttributes = {
+					8D1107260486CEB800E47090 = {
+						LastSwiftMigration = 1340;
+					};
 					9408FBF919DD72DE004F800E = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
@@ -1805,6 +1813,7 @@
 				D01773920D7A2F32002E03DE /* HFResizingView.m in Sources */,
 				D0CD51F60DA2B928006E8D1B /* AppDelegate.m in Sources */,
 				D03CFA8A0FC78BCD00EE79E4 /* DataInspectorRepresenter.m in Sources */,
+				00DAE16E291B794D0094C709 /* ObjC.m in Sources */,
 				D02BD6E010545E9000535EDE /* FileDataDocument.m in Sources */,
 				A59BC59C2002113F0066860F /* HFTemplateNode.m in Sources */,
 				A59BC59F2002E63C0066860F /* HFTemplateController.m in Sources */,
@@ -1822,7 +1831,7 @@
 				A5628AAB21D8561D00911ABB /* Tcl_ParseArgsObjv.c in Sources */,
 				D0D8C2BC12A3C10100960FC4 /* ChooseStringEncodingWindowController.m in Sources */,
 				A59BC5922001FB9A0066860F /* HFTclTemplateController.m in Sources */,
-				A56D78161E7EF088001D1892 /* CLIController.m in Sources */,
+				00DAE16B291A18090094C709 /* CLIController.swift in Sources */,
 				D059E1291311C676001493B8 /* AppDebugging.m in Sources */,
 				D01EF15413B2A0D300CC9283 /* TextDividerRepresenter.m in Sources */,
 				A5589AD22206E1C4000293A4 /* ExtendedAttributeDataDocument.m in Sources */,
@@ -2795,6 +2804,7 @@
 		D0222569146F5D3900646C27 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -2818,6 +2828,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridiculousfish.HexFiend;
 				PRODUCT_NAME = "Hex Fiend";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexFiend_2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -2955,6 +2967,7 @@
 		D022259E146F629E00646C27 /* Debug+UnitTests */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -2977,6 +2990,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridiculousfish.HexFiend;
 				PRODUCT_NAME = "Hex Fiend";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexFiend_2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Debug+UnitTests";
@@ -3111,6 +3127,7 @@
 		D039DC1214835A1400364FA6 /* Release+CodeSign */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -3134,6 +3151,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridiculousfish.HexFiend;
 				PRODUCT_NAME = "Hex Fiend";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexFiend_2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Release+CodeSign";
@@ -3288,6 +3307,7 @@
 		D05390291E218CB700F9AAC1 /* Release+MAS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
@@ -3307,6 +3327,8 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridiculousfish.HexFiend;
 				PRODUCT_NAME = "Hex Fiend";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexFiend_2-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Release+MAS";
@@ -3476,6 +3498,7 @@
 		D05390301E218CD500F9AAC1 /* Debug+MAS */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3494,6 +3517,9 @@
 				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridiculousfish.HexFiend;
 				PRODUCT_NAME = "Hex Fiend";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexFiend_2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Debug+MAS";
@@ -3668,6 +3694,7 @@
 		D075E205148196B00010D9AE /* Debug+CodeSign */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3690,6 +3717,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridiculousfish.HexFiend;
 				PRODUCT_NAME = "Hex Fiend";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexFiend_2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = "Debug+CodeSign";
@@ -3848,6 +3878,7 @@
 		D083F7370DBCBD5F00C2B632 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "-";
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -3870,6 +3901,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ridiculousfish.HexFiend;
 				PRODUCT_NAME = "Hex Fiend";
+				SWIFT_OBJC_BRIDGING_HEADER = "HexFiend_2-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
