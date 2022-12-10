@@ -27,7 +27,7 @@
 		00DAE16E291B794D0094C709 /* ObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE16D291B794D0094C709 /* ObjC.m */; };
 		00DAE17029203CB50094C709 /* ChooseStringEncodingWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE16F29203CB50094C709 /* ChooseStringEncodingWindowController.swift */; };
 		00DAE17B2920CF020094C709 /* DiffRangeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE1792920CABC0094C709 /* DiffRangeWindowController.swift */; };
-		795F46C114BAA45D00EB2F7D /* OpenDriveWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 795F46C014BAA45D00EB2F7D /* OpenDriveWindowController.m */; };
+		00DAE17F2920D6860094C709 /* OpenDriveWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00DAE17C2920D2290094C709 /* OpenDriveWindowController.swift */; };
 		795F46C314BAADB600EB2F7D /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 795F46C214BAADB600EB2F7D /* DiskArbitration.framework */; };
 		79E2FF201745A2B300FA8F12 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 79E2FF1F1745A2B300FA8F12 /* dsa_pub.pem */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
@@ -425,12 +425,12 @@
 		00DAE16D291B794D0094C709 /* ObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ObjC.m; path = app/sources/ObjC.m; sourceTree = "<group>"; };
 		00DAE16F29203CB50094C709 /* ChooseStringEncodingWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChooseStringEncodingWindowController.swift; path = app/sources/ChooseStringEncodingWindowController.swift; sourceTree = "<group>"; };
 		00DAE1792920CABC0094C709 /* DiffRangeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiffRangeWindowController.swift; path = app/sources/DiffRangeWindowController.swift; sourceTree = "<group>"; };
+		00DAE17C2920D2290094C709 /* OpenDriveWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenDriveWindowController.swift; sourceTree = "<group>"; };
 		089C165DFE840E0CC02AAC07 /* Base */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = app/sources/main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		795F46BF14BAA45D00EB2F7D /* OpenDriveWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OpenDriveWindowController.h; path = app/sources/OpenDriveWindowController.h; sourceTree = "<group>"; };
 		795F46C014BAA45D00EB2F7D /* OpenDriveWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OpenDriveWindowController.m; path = app/sources/OpenDriveWindowController.m; sourceTree = "<group>"; };
 		795F46C214BAADB600EB2F7D /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = System/Library/Frameworks/DiskArbitration.framework; sourceTree = SDKROOT; };
 		79E2FF1F1745A2B300FA8F12 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = app/resources/dsa_pub.pem; sourceTree = "<group>"; };
@@ -1347,8 +1347,8 @@
 			isa = PBXGroup;
 			children = (
 				00DAE16F29203CB50094C709 /* ChooseStringEncodingWindowController.swift */,
-				795F46BF14BAA45D00EB2F7D /* OpenDriveWindowController.h */,
 				795F46C014BAA45D00EB2F7D /* OpenDriveWindowController.m */,
+				00DAE17C2920D2290094C709 /* OpenDriveWindowController.swift */,
 				00DAE1792920CABC0094C709 /* DiffRangeWindowController.swift */,
 				00DAE16A291A18090094C709 /* CLIController.swift */,
 			);
@@ -1824,6 +1824,7 @@
 				A5589AC92206CFCC000293A4 /* HFExtendedAttributes.m in Sources */,
 				D0CBB32A128F906000989C15 /* DiffTextViewContainer.m in Sources */,
 				A5589ACF2206D3C8000293A4 /* HFOpenAccessoryViewController.m in Sources */,
+				00DAE17F2920D6860094C709 /* OpenDriveWindowController.swift in Sources */,
 				A5628AAB21D8561D00911ABB /* Tcl_ParseArgsObjv.c in Sources */,
 				00DAE17029203CB50094C709 /* ChooseStringEncodingWindowController.swift in Sources */,
 				00DAE17B2920CF020094C709 /* DiffRangeWindowController.swift in Sources */,
@@ -1835,7 +1836,6 @@
 				D0A8AF7D1467273900387627 /* AppUtilities.m in Sources */,
 				D0D0536E1487FF2500704643 /* HFFindReplaceOperationView.m in Sources */,
 				A59BC59820020B480066860F /* HFBinaryTemplateController.m in Sources */,
-				795F46C114BAA45D00EB2F7D /* OpenDriveWindowController.m in Sources */,
 				DAE8EBFE1598FFDB0008ADB9 /* DocumentWindow.m in Sources */,
 				A572614A21D8A51B00970A0E /* HFPrompt.m in Sources */,
 			);

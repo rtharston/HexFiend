@@ -3,7 +3,9 @@
 //
 
 #import "AppDelegate.h"
+#import "AppUtilities.h"
 #import "BaseDataDocument.h"
 #import "DiffDocument.h"
 #import <HexFiend/HFEncodingManager.h>
 #import "ObjC.h"
+#include <sys/stat.h>

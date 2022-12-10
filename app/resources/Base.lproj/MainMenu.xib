@@ -670,7 +670,7 @@
                 <outlet property="stringEncodingMenu" destination="684" id="716"/>
             </connections>
         </customObject>
-        <customObject id="733" customClass="OpenDriveWindowController"/>
+        <customObject id="733" customClass="OpenDriveWindowController" customModule="Hex_Fiend" customModuleProvider="target"/>
         <customObject id="680" customClass="ChooseStringEncodingWindowController" customModule="Hex_Fiend" customModuleProvider="target"/>
         <customObject id="744" customClass="SUUpdater"/>
         <customObject id="Zzl-4N-uHo" userLabel="CLIController" customClass="CLIController" customModule="Hex_Fiend" customModuleProvider="target"/>
